@@ -72,10 +72,24 @@ button {
 .sum{
   width: 20%;
 }
+
 .delete {
   height: 30px;
   width: 30px;
   background-color: white;
   color: red;
   font-size: 20px;
+}
+
+.footer-bag {
+  display: flex;
+  align-items: center;
+}
+
+.delete-all {
+  padding: 10px 14px;
+  height: 36px;
+  font-weight: bolder;
+  background-color: aliceblue;
+  margin: 0 auto;
 }

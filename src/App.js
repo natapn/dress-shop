@@ -41,6 +41,11 @@ function App() {
     setTotal(newTotal);
   }
 
+  const deleteAll = () => {
+    setBag([]);
+    setTotal(0);
+  }
+
   return (
     <div>
       <h1>DRESS SHOP</h1>
@@ -67,7 +72,10 @@ function App() {
               </div>
             )
           })}
-          <h3>total: ${total}</h3>
+          <div className="footer-bag">
+            <h3>total: ${total}</h3>
+            <button className="delete-all" onClick={deleteAll}>DELETE ALL</button>
+          </div>
         </div>
       </div>
     </div>
